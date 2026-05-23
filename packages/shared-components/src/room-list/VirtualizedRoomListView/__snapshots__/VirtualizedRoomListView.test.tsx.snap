@@ -48,13 +48,17 @@ exports[`<VirtualizedRoomListView /> > renders Default story 1`] = `
                   class="Flex-module_flex RoomListItemView-module_container"
                   style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
                 >
-                  <div
-                    aria-label="General avatar"
-                    role="img"
-                    style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+                  <span
+                    style="flex-shrink: 0;"
                   >
-                    GE
-                  </div>
+                    <div
+                      aria-label="General avatar"
+                      role="img"
+                      style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+                    >
+                      GE
+                    </div>
+                  </span>
                   <div
                     class="Flex-module_flex RoomListItemView-module_content"
                     style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"
@@ -197,13 +201,17 @@ exports[`<VirtualizedRoomListView /> > renders Default story 1`] = `
                   class="Flex-module_flex RoomListItemView-module_container"
                   style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
                 >
-                  <div
-                    aria-label="Random avatar"
-                    role="img"
-                    style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+                  <span
+                    style="flex-shrink: 0;"
                   >
-                    RA
-                  </div>
+                    <div
+                      aria-label="Random avatar"
+                      role="img"
+                      style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+                    >
+                      RA
+                    </div>
+                  </span>
                   <div
                     class="Flex-module_flex RoomListItemView-module_content"
                     style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"
@@ -319,13 +327,17 @@ exports[`<VirtualizedRoomListView /> > renders Default story 1`] = `
                   class="Flex-module_flex RoomListItemView-module_container"
                   style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
                 >
-                  <div
-                    aria-label="Engineering avatar"
-                    role="img"
-                    style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+                  <span
+                    style="flex-shrink: 0;"
                   >
-                    EN
-                  </div>
+                    <div
+                      aria-label="Engineering avatar"
+                      role="img"
+                      style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+                    >
+                      EN
+                    </div>
+                  </span>
                   <div
                     class="Flex-module_flex RoomListItemView-module_content"
                     style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"
@@ -447,13 +459,17 @@ exports[`<VirtualizedRoomListView /> > renders Default story 1`] = `
                   class="Flex-module_flex RoomListItemView-module_container"
                   style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
                 >
-                  <div
-                    aria-label="Design avatar"
-                    role="img"
-                    style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+                  <span
+                    style="flex-shrink: 0;"
                   >
-                    DE
-                  </div>
+                    <div
+                      aria-label="Design avatar"
+                      role="img"
+                      style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+                    >
+                      DE
+                    </div>
+                  </span>
                   <div
                     class="Flex-module_flex RoomListItemView-module_content"
                     style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"
@@ -569,13 +585,17 @@ exports[`<VirtualizedRoomListView /> > renders Default story 1`] = `
                   class="Flex-module_flex RoomListItemView-module_container"
                   style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
                 >
-                  <div
-                    aria-label="Product avatar"
-                    role="img"
-                    style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+                  <span
+                    style="flex-shrink: 0;"
                   >
-                    PR
-                  </div>
+                    <div
+                      aria-label="Product avatar"
+                      role="img"
+                      style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+                    >
+                      PR
+                    </div>
+                  </span>
                   <div
                     class="Flex-module_flex RoomListItemView-module_content"
                     style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"
@@ -697,13 +717,17 @@ exports[`<VirtualizedRoomListView /> > renders Default story 1`] = `
                   class="Flex-module_flex RoomListItemView-module_container"
                   style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
                 >
-                  <div
-                    aria-label="Marketing avatar"
-                    role="img"
-                    style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+                  <span
+                    style="flex-shrink: 0;"
                   >
-                    MA
-                  </div>
+                    <div
+                      aria-label="Marketing avatar"
+                      role="img"
+                      style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+                    >
+                      MA
+                    </div>
+                  </span>
                   <div
                     class="Flex-module_flex RoomListItemView-module_content"
                     style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"
@@ -842,13 +866,17 @@ exports[`<VirtualizedRoomListView /> > renders Default story 1`] = `
                   class="Flex-module_flex RoomListItemView-module_container"
                   style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
                 >
-                  <div
-                    aria-label="Sales avatar"
-                    role="img"
-                    style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+                  <span
+                    style="flex-shrink: 0;"
                   >
-                    SA
-                  </div>
+                    <div
+                      aria-label="Sales avatar"
+                      role="img"
+                      style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+                    >
+                      SA
+                    </div>
+                  </span>
                   <div
                     class="Flex-module_flex RoomListItemView-module_content"
                     style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"
@@ -970,13 +998,17 @@ exports[`<VirtualizedRoomListView /> > renders Default story 1`] = `
                   class="Flex-module_flex RoomListItemView-module_container"
                   style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
                 >
-                  <div
-                    aria-label="Support avatar"
-                    role="img"
-                    style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+                  <span
+                    style="flex-shrink: 0;"
                   >
-                    SU
-                  </div>
+                    <div
+                      aria-label="Support avatar"
+                      role="img"
+                      style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+                    >
+                      SU
+                    </div>
+                  </span>
                   <div
                     class="Flex-module_flex RoomListItemView-module_content"
                     style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"
@@ -1092,13 +1124,17 @@ exports[`<VirtualizedRoomListView /> > renders Default story 1`] = `
                   class="Flex-module_flex RoomListItemView-module_container"
                   style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
                 >
-                  <div
-                    aria-label="Announcements avatar"
-                    role="img"
-                    style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+                  <span
+                    style="flex-shrink: 0;"
                   >
-                    AN
-                  </div>
+                    <div
+                      aria-label="Announcements avatar"
+                      role="img"
+                      style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+                    >
+                      AN
+                    </div>
+                  </span>
                   <div
                     class="Flex-module_flex RoomListItemView-module_content"
                     style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"
@@ -1220,13 +1256,17 @@ exports[`<VirtualizedRoomListView /> > renders Default story 1`] = `
                   class="Flex-module_flex RoomListItemView-module_container"
                   style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
                 >
-                  <div
-                    aria-label="Off-topic avatar"
-                    role="img"
-                    style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+                  <span
+                    style="flex-shrink: 0;"
                   >
-                    OF
-                  </div>
+                    <div
+                      aria-label="Off-topic avatar"
+                      role="img"
+                      style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+                    >
+                      OF
+                    </div>
+                  </span>
                   <div
                     class="Flex-module_flex RoomListItemView-module_content"
                     style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"

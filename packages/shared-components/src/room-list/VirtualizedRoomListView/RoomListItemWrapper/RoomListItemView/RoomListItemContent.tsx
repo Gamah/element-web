@@ -14,6 +14,7 @@ import { useViewModel } from "../../../../core/viewmodel";
 import { NotificationDecoration } from "./NotificationDecoration";
 import { RoomListItemHoverMenu } from "./RoomListItemHoverMenu";
 import { type Room, type RoomListItemViewModel } from "./RoomListItemView";
+import { useRoomListMini } from "../../../../room-list/RoomListMiniContext";
 import styles from "./RoomListItemView.module.css";
 
 /**
@@ -39,6 +40,15 @@ export const RoomListItemContent = memo(function RoomListItemContent({
     isDragging = false,
 }: RoomListItemContentProps): JSX.Element {
     const item = useViewModel(vm);
+    const { isMiniCollapsed } = useRoomListMini();
+
+    if (isMiniCollapsed) {
+        return (
+            <Flex className={styles.containerMini} align="center" justify="center">
+                {renderAvatar(item.room)}
+            </Flex>
+        );
+    }
 
     return (
         <Flex
@@ -48,7 +58,7 @@ export const RoomListItemContent = memo(function RoomListItemContent({
             gap="var(--cpd-space-3x)"
             align="center"
         >
-            {renderAvatar(item.room)}
+            <span style={{ flexShrink: 0 }}>{renderAvatar(item.room)}</span>
             <Flex className={styles.content} gap="var(--cpd-space-2x)" align="center" justify="space-between">
                 {/* We truncate the room name when too long. Title here is to show the full name on hover */}
                 <div className={styles.ellipsis}>

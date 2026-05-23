@@ -24,6 +24,7 @@ import { GroupedVirtualizedList, type GroupedVirtualizedListProps } from "../../
 import { RoomListSectionHeaderView } from "./RoomListSectionHeaderView";
 import { RoomListItemWrapper } from "./RoomListItemWrapper";
 import { RoomListItemDragOverlayView } from "./RoomListItemDragOverlayView";
+import { useRoomListMini } from "../../room-list/RoomListMiniContext";
 import styles from "./VirtualizedRoomListView.module.css";
 
 /**
@@ -113,6 +114,7 @@ const EXTENDED_VIEWPORT_HEIGHT = 25 * ROOM_LIST_ITEM_HEIGHT;
  */
 export function VirtualizedRoomListView({ vm, renderAvatar, onKeyDown }: VirtualizedRoomListViewProps): JSX.Element {
     const snapshot = useViewModel(vm);
+    const { isMiniCollapsed } = useRoomListMini();
     const { roomListState, sections, isFlatList } = snapshot;
     const activeRoomIndex = roomListState.activeRoomIndex;
     const scrollToSectionTag = roomListState.scrollToSectionTag;
@@ -261,6 +263,8 @@ export function VirtualizedRoomListView({ vm, renderAvatar, onKeyDown }: Virtual
             // Item is focused when the list has focus AND this item's key matches tabIndexKey
             // This matches the old RoomList implementation's roving tabindex pattern
             const isFocused = context.focused && context.tabIndexKey === headerId;
+
+            if (isMiniCollapsed) return <></>;
 
             return (
                 <RoomListSectionHeaderView

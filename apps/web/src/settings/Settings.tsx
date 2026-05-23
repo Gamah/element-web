@@ -331,6 +331,7 @@ export interface Settings {
     "RoomList.preferredSorting": IBaseSetting<SortingAlgorithm>;
     "RoomList.panelSize": IBaseSetting<number | null>;
     "RoomList.isPanelCollapsed": IBaseSetting<boolean>;
+    "RoomList.isPanelMiniCollapsed": IBaseSetting<boolean>;
     "RoomList.showMessagePreview": IBaseSetting<boolean>;
     "RightPanel.phasesGlobal": IBaseSetting<IRightPanelForRoomStored | null>;
     "RightPanel.phases": IBaseSetting<IRightPanelForRoomStored | null>;
@@ -1233,6 +1234,10 @@ export const SETTINGS: Settings = {
         default: null,
     },
     "RoomList.isPanelCollapsed": {
+        supportedLevels: [SettingLevel.DEVICE],
+        default: false,
+    },
+    "RoomList.isPanelMiniCollapsed": {
         supportedLevels: [SettingLevel.DEVICE],
         default: false,
     },

@@ -8,6 +8,7 @@
 import React, { type JSX, type ReactNode } from "react";
 
 import { useViewModel, type ViewModel } from "../../core/viewmodel";
+import { useRoomListMini } from "../RoomListMiniContext";
 import { RoomListPrimaryFilters, type FilterId } from "../RoomListPrimaryFilters";
 import { RoomListLoadingSkeleton } from "./RoomListLoadingSkeleton";
 import { RoomListEmptyStateView } from "./RoomListEmptyStateView";
@@ -100,6 +101,7 @@ export interface RoomListViewProps {
  */
 export const RoomListView: React.FC<RoomListViewProps> = ({ vm, renderAvatar, onKeyDown }): JSX.Element => {
     const snapshot = useViewModel(vm);
+    const { isMiniCollapsed } = useRoomListMini();
     let listBody: ReactNode;
 
     if (snapshot.isLoadingRooms) {
@@ -112,13 +114,15 @@ export const RoomListView: React.FC<RoomListViewProps> = ({ vm, renderAvatar, on
 
     return (
         <>
-            <div>
-                <RoomListPrimaryFilters
-                    filterIds={snapshot.filterIds}
-                    activeFilterId={snapshot.activeFilterId}
-                    onToggleFilter={vm.onToggleFilter}
-                />
-            </div>
+            {!isMiniCollapsed && (
+                <div>
+                    <RoomListPrimaryFilters
+                        filterIds={snapshot.filterIds}
+                        activeFilterId={snapshot.activeFilterId}
+                        onToggleFilter={vm.onToggleFilter}
+                    />
+                </div>
+            )}
             <Flex direction="column" className={styles.list}>
                 {listBody}
                 {snapshot.toast && <RoomListToast type={snapshot.toast} onClose={vm.closeToast} />}

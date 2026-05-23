@@ -49,7 +49,7 @@
     },
     "left_panel": {
         "open_dial_pad": "Open dial pad",
-        "separator_label": "Click or drag to expand"
+        "separator_label": "Collapse to icons or drag to resize"
     },
     "menus": {
         "user_menu": {

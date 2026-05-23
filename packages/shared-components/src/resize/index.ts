@@ -24,6 +24,10 @@ export interface ResizerViewSnapshot {
      */
     isCollapsed: boolean;
     /**
+     * Whether the left panel is in mini (avatar-only) mode.
+     */
+    isMiniCollapsed: boolean;
+    /**
      * This is the initial size of the panel if available; should be interpreted as percentage.
      */
     initialSize?: number;

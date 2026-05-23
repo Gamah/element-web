@@ -60,6 +60,7 @@ export * from "./room/timeline/event-tile/UrlPreviewGroupView";
 export * from "./core/rich-list/RichItem";
 export * from "./core/rich-list/RichList";
 export * from "./room-list/RoomListHeaderView";
+export * from "./room-list/RoomListMiniContext";
 export * from "./room-list/RoomListSearchView";
 export * from "./room-list/RoomListView";
 export * from "./room-list/VirtualizedRoomListView/RoomListItemWrapper/RoomListItemView";

@@ -7,9 +7,8 @@
 
 import React from "react";
 import { Separator } from "react-resizable-panels";
-import DragIcon from "@vector-im/compound-design-tokens/assets/web/icons/drag-list";
+import CollapseIcon from "@vector-im/compound-design-tokens/assets/web/icons/collapse";
 import classNames from "classnames";
-import { Tooltip } from "@vector-im/compound-web";
 
 import { type ViewModel, useViewModel } from "../../core/viewmodel";
 import styles from "./SeparatorView.module.css";
@@ -17,19 +16,9 @@ import { type ResizerViewSnapshot } from "..";
 import { useI18n } from "../../core/i18n/i18nContext";
 
 export interface SeparatorViewActions {
-    /**
-     * onClick handler for the separator.
-     */
     onSeparatorClick: () => void;
-
-    /**
-     * onFocus handler for the separator.
-     */
+    onSeparatorPointerDown: () => void;
     onFocus: () => void;
-
-    /**
-     * onBlur handler for the separator.
-     */
     onBlur: () => void;
 }
 
@@ -39,34 +28,33 @@ interface Props {
 }
 
 /**
- * Custom separator for collapsible left-panel based on {@link Separator}.
+ * Custom separator for the collapsible left-panel.
+ * Always visible; clicking (without dragging) toggles mini-collapse.
  */
 export function SeparatorView({ vm, className }: Props): React.ReactNode {
     const { translate: _t } = useI18n();
-    const { isCollapsed, isFocusedViaKeyboard } = useViewModel(vm);
-
-    const classes = classNames(styles.separator, className, {
-        [styles.visible]: isCollapsed || isFocusedViaKeyboard,
-    });
+    const { isMiniCollapsed, isFocusedViaKeyboard } = useViewModel(vm);
 
     return (
         <Separator
-            className={classes}
+            className={classNames(styles.separator, className, {
+                [styles.focused]: isFocusedViaKeyboard,
+            })}
+            disableDoubleClick
             onClick={vm.onSeparatorClick}
+            onPointerDown={vm.onSeparatorPointerDown}
             onFocus={vm.onFocus}
             onBlur={vm.onBlur}
             aria-label={_t("left_panel|separator_label")}
         >
-            <Tooltip description={_t("left_panel|separator_label")} placement="right">
-                <DragIcon
-                    width="20px"
-                    height="12px"
-                    // Without a custom view-box, this svg would scale incorrectly and would appear tiny within the separator.
-                    // See https://github.com/element-hq/compound/issues/242
-                    viewBox="3.999704360961914 8.999704360961914 16.000295639038086 6.000591278076172"
-                    transform="rotate(90)"
-                />
-            </Tooltip>
+            <CollapseIcon
+                width="10px"
+                height="10px"
+                className={classNames(styles.collapseIcon, {
+                    [styles.collapseIconFlipped]: isMiniCollapsed,
+                })}
+                aria-hidden
+            />
         </Separator>
     );
 }

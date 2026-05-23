@@ -16,8 +16,8 @@ import { Flex } from "../../core/utils/Flex";
 
 type SeparatorViewProps = ResizerViewSnapshot & SeparatorViewActions;
 
-const Wrapper = ({ onFocus, onBlur, onSeparatorClick, ...snapshot }: SeparatorViewProps): JSX.Element => {
-    const vm = useMockedViewModel(snapshot, { onFocus, onBlur, onSeparatorClick });
+const Wrapper = ({ onFocus, onBlur, onSeparatorClick, onSeparatorPointerDown, ...snapshot }: SeparatorViewProps): JSX.Element => {
+    const vm = useMockedViewModel(snapshot, { onFocus, onBlur, onSeparatorClick, onSeparatorPointerDown });
     return <SeparatorView className="Separator" vm={vm} />;
 };
 
@@ -31,7 +31,9 @@ const meta = {
         onFocus: fn(),
         onBlur: fn(),
         onSeparatorClick: fn(),
+        onSeparatorPointerDown: fn(),
         isCollapsed: true,
+        isMiniCollapsed: false,
         isFocusedViaKeyboard: false,
     },
     parameters: {

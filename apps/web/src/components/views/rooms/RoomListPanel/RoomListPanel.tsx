@@ -6,7 +6,8 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React, { useState, useCallback } from "react";
-import { Flex, RoomListHeaderView, useCreateAutoDisposedViewModel } from "@element-hq/web-shared-components";
+import classNames from "classnames";
+import { Flex, RoomListHeaderView, useCreateAutoDisposedViewModel, useRoomListMini } from "@element-hq/web-shared-components";
 
 import { shouldShowComponent } from "../../../../customisations/helpers/UIComponents";
 import { UIComponent } from "../../../../settings/UIFeature";
@@ -35,6 +36,7 @@ type RoomListPanelProps = {
 export const RoomListPanel: React.FC<RoomListPanelProps> = ({ activeSpace }) => {
     const displayRoomSearch = shouldShowComponent(UIComponent.FilterContainer);
     const [focusedElement, setFocusedElement] = useState<Element | null>(null);
+    const { isMiniCollapsed, onToggleMiniCollapsed } = useRoomListMini();
 
     const onFocus = useCallback((ev: React.FocusEvent): void => {
         setFocusedElement(ev.target as Element);
@@ -46,6 +48,7 @@ export const RoomListPanel: React.FC<RoomListPanelProps> = ({ activeSpace }) => 
 
     const onKeyDown = useCallback(
         (ev: React.KeyboardEvent, state?: IRovingTabIndexState): void => {
+            if (isMiniCollapsed) return;
             if (!focusedElement) return;
             const navAction = getKeyBindingsManager().getNavigationAction(ev);
             if (navAction === KeyBindingAction.PreviousLandmark || navAction === KeyBindingAction.NextLandmark) {
@@ -57,7 +60,7 @@ export const RoomListPanel: React.FC<RoomListPanelProps> = ({ activeSpace }) => 
                 );
             }
         },
-        [focusedElement],
+        [focusedElement, isMiniCollapsed],
     );
 
     const matrixClient = useMatrixClientContext();
@@ -68,16 +71,21 @@ export const RoomListPanel: React.FC<RoomListPanelProps> = ({ activeSpace }) => 
     return (
         <Flex
             as="nav"
-            className="mx_RoomListPanel"
+            className={classNames("mx_RoomListPanel", { "mx_RoomListPanel--mini": isMiniCollapsed })}
             direction="column"
             align="stretch"
             aria-label={_t("room_list|list_title")}
+            onClick={isMiniCollapsed ? onToggleMiniCollapsed : undefined}
             onFocus={onFocus}
             onBlur={onBlur}
             onKeyDown={onKeyDown}
         >
-            {displayRoomSearch && <RoomListSearch activeSpace={activeSpace} />}
-            <RoomListHeaderView vm={vm} />
+            {!isMiniCollapsed && displayRoomSearch && <RoomListSearch activeSpace={activeSpace} />}
+            {!isMiniCollapsed && (
+                <Flex align="center" justify="space-between" style={{ paddingRight: "var(--cpd-space-2x)" }}>
+                    <RoomListHeaderView vm={vm} />
+                </Flex>
+            )}
             <RoomListView />
         </Flex>
     );

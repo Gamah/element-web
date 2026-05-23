@@ -24,10 +24,11 @@ class MockViewModel extends BaseViewModel<ResizerViewSnapshot, unknown> implemen
     public onBlur: () => void = vi.fn();
     public onFocus: () => void = vi.fn();
     public onSeparatorClick: () => void = vi.fn();
+    public onSeparatorPointerDown: () => void = vi.fn();
 }
 
 function renderPanel(initialSnapshot?: Partial<ResizerViewSnapshot>): MockViewModel {
-    const snapshot = { isCollapsed: true, isFocusedViaKeyboard: false, initialSize: 20, ...initialSnapshot };
+    const snapshot = { isCollapsed: true, isMiniCollapsed: false, isFocusedViaKeyboard: false, initialSize: 20, ...initialSnapshot };
     const vm = new MockViewModel(snapshot);
     render(
         <ResizableGroup>

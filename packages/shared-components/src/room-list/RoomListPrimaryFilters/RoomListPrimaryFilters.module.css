@@ -5,8 +5,27 @@
  * Please see LICENSE files in the repository root for full details.
  */
 
+.filterContainer {
+    container-type: inline-size;
+}
+
+.filterBubble {
+    display: none;
+    padding: 0 var(--cpd-space-3x) var(--cpd-space-3x);
+}
+
 .roomListPrimaryFilters {
     padding: 0 var(--cpd-space-4x) var(--cpd-space-5x) var(--cpd-space-3x);
+}
+
+@container (max-width: 130px) {
+    .filterBubble {
+        display: flex;
+    }
+
+    .roomListPrimaryFilters {
+        display: none;
+    }
 }
 
 /* Hide filters that are wrapping when collapsed */
@@ -15,15 +34,11 @@
 }
 
 .list {
-    /**
-     * The InteractionObserver needs the height to be set to work properly.
-     */
     height: 100%;
     flex: 1;
-    user-select: none; /* currently supported by Chrome, Edge, Opera and Firefox */
+    user-select: none;
 }
 
-/* IconButton styles for chevron */
 .iconButton svg {
     transition: transform 0.1s linear;
 }

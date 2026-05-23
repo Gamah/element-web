@@ -15,6 +15,7 @@
     position: relative;
     cursor: pointer;
     width: 100%;
+    container-type: inline-size;
 
     /* Gap between items, accounted for in ROOM_LIST_ITEM_HEIGHT */
     --padding-top: var(--cpd-space-1x);
@@ -68,6 +69,13 @@
     padding: 0 var(--cpd-space-2x);
     border-radius: 8px;
     min-width: 0;
+}
+
+.containerMini {
+    flex: 1;
+    margin: 0 var(--cpd-space-2x);
+    padding: 0;
+    border-radius: 8px;
 }
 
 .dragging {
@@ -131,4 +139,16 @@
 
 .lastItem {
     --padding-bottom: 0px;
+}
+
+@container (max-width: 80px) {
+    .container {
+        margin: 0 var(--cpd-space-2x);
+        padding: 0;
+        justify-content: center;
+    }
+
+    .content {
+        display: none;
+    }
 }

@@ -37,7 +37,7 @@ class MockViewModel extends BaseViewModel<ResizerViewSnapshot, unknown> implemen
 }
 
 function renderPanel(initialSnapshot?: Partial<ResizerViewSnapshot>): MockViewModel {
-    const snapshot = { isCollapsed: false, isFocusedViaKeyboard: false, initialSize: 20, ...initialSnapshot };
+    const snapshot = { isCollapsed: false, isMiniCollapsed: false, isFocusedViaKeyboard: false, initialSize: 20, ...initialSnapshot };
     const vm = new MockViewModel(snapshot);
     render(
         <ResizableGroup>

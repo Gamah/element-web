@@ -6,21 +6,40 @@
  */
 
 .separator {
-    /* Hide the separator by default */
-    display: none;
-    /* Necessary to avoid weird focus outlines (doubled on one side, absent on one side etc...) */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12px;
     outline-offset: -2px;
+    cursor: col-resize;
+    flex-shrink: 0;
+}
+
+.separator::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    transform: translateX(-50%);
+    background: var(--cpd-color-bg-subtle-primary);
 }
 
 .separator[data-separator="hover"],
-.separator:focus-visible {
+.separator:focus-visible,
+.focused {
     background: var(--cpd-color-bg-action-tertiary-hovered);
 }
 
-.visible {
-    /* Show the separator when the left panel is collapsed */
-    display: flex;
-    align-items: center;
-    width: 12px;
-    border-right: 1px solid var(--cpd-color-bg-subtle-primary);
+.collapseIcon {
+    position: relative;
+    color: var(--cpd-color-icon-tertiary);
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+}
+
+.collapseIconFlipped {
+    transform: rotate(180deg);
 }

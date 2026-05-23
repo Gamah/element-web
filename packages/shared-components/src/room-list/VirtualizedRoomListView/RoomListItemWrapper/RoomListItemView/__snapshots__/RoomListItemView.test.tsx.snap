@@ -22,13 +22,17 @@ exports[`<RoomListItemView /> > renders Bold story 1`] = `
         class="Flex-module_flex RoomListItemView-module_container"
         style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
       >
-        <div
-          aria-label="General avatar"
-          role="img"
-          style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+        <span
+          style="flex-shrink: 0;"
         >
-          GE
-        </div>
+          <div
+            aria-label="General avatar"
+            role="img"
+            style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+          >
+            GE
+          </div>
+        </span>
         <div
           class="Flex-module_flex RoomListItemView-module_content"
           style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"
@@ -152,13 +156,17 @@ exports[`<RoomListItemView /> > renders Default story 1`] = `
         class="Flex-module_flex RoomListItemView-module_container"
         style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
       >
-        <div
-          aria-label="General avatar"
-          role="img"
-          style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+        <span
+          style="flex-shrink: 0;"
         >
-          GE
-        </div>
+          <div
+            aria-label="General avatar"
+            role="img"
+            style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+          >
+            GE
+          </div>
+        </span>
         <div
           class="Flex-module_flex RoomListItemView-module_content"
           style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"
@@ -282,13 +290,17 @@ exports[`<RoomListItemView /> > renders Invitation story 1`] = `
         class="Flex-module_flex RoomListItemView-module_container"
         style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
       >
-        <div
-          aria-label="General avatar"
-          role="img"
-          style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+        <span
+          style="flex-shrink: 0;"
         >
-          GE
-        </div>
+          <div
+            aria-label="General avatar"
+            role="img"
+            style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+          >
+            GE
+          </div>
+        </span>
         <div
           class="Flex-module_flex RoomListItemView-module_content"
           style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"
@@ -430,13 +442,17 @@ exports[`<RoomListItemView /> > renders NoMessagePreview story 1`] = `
         class="Flex-module_flex RoomListItemView-module_container"
         style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
       >
-        <div
-          aria-label="General avatar"
-          role="img"
-          style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+        <span
+          style="flex-shrink: 0;"
         >
-          GE
-        </div>
+          <div
+            aria-label="General avatar"
+            role="img"
+            style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+          >
+            GE
+          </div>
+        </span>
         <div
           class="Flex-module_flex RoomListItemView-module_content"
           style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"
@@ -554,13 +570,17 @@ exports[`<RoomListItemView /> > renders Selected story 1`] = `
         class="Flex-module_flex RoomListItemView-module_container"
         style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
       >
-        <div
-          aria-label="General avatar"
-          role="img"
-          style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+        <span
+          style="flex-shrink: 0;"
         >
-          GE
-        </div>
+          <div
+            aria-label="General avatar"
+            role="img"
+            style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+          >
+            GE
+          </div>
+        </span>
         <div
           class="Flex-module_flex RoomListItemView-module_content"
           style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"
@@ -684,13 +704,17 @@ exports[`<RoomListItemView /> > renders UnsentMessage story 1`] = `
         class="Flex-module_flex RoomListItemView-module_container"
         style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
       >
-        <div
-          aria-label="General avatar"
-          role="img"
-          style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+        <span
+          style="flex-shrink: 0;"
         >
-          GE
-        </div>
+          <div
+            aria-label="General avatar"
+            role="img"
+            style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+          >
+            GE
+          </div>
+        </span>
         <div
           class="Flex-module_flex RoomListItemView-module_content"
           style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"
@@ -832,13 +856,17 @@ exports[`<RoomListItemView /> > renders WithHoverMenu story 1`] = `
         class="Flex-module_flex RoomListItemView-module_container"
         style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
       >
-        <div
-          aria-label="General avatar"
-          role="img"
-          style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+        <span
+          style="flex-shrink: 0;"
         >
-          GE
-        </div>
+          <div
+            aria-label="General avatar"
+            role="img"
+            style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+          >
+            GE
+          </div>
+        </span>
         <div
           class="Flex-module_flex RoomListItemView-module_content"
           style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"
@@ -962,13 +990,17 @@ exports[`<RoomListItemView /> > renders WithMention story 1`] = `
         class="Flex-module_flex RoomListItemView-module_container"
         style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
       >
-        <div
-          aria-label="General avatar"
-          role="img"
-          style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+        <span
+          style="flex-shrink: 0;"
         >
-          GE
-        </div>
+          <div
+            aria-label="General avatar"
+            role="img"
+            style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+          >
+            GE
+          </div>
+        </span>
         <div
           class="Flex-module_flex RoomListItemView-module_content"
           style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"
@@ -1115,13 +1147,17 @@ exports[`<RoomListItemView /> > renders WithNotification story 1`] = `
         class="Flex-module_flex RoomListItemView-module_container"
         style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
       >
-        <div
-          aria-label="General avatar"
-          role="img"
-          style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+        <span
+          style="flex-shrink: 0;"
         >
-          GE
-        </div>
+          <div
+            aria-label="General avatar"
+            role="img"
+            style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+          >
+            GE
+          </div>
+        </span>
         <div
           class="Flex-module_flex RoomListItemView-module_content"
           style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"
@@ -1257,13 +1293,17 @@ exports[`<RoomListItemView /> > renders WithVideoCall story 1`] = `
         class="Flex-module_flex RoomListItemView-module_container"
         style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
       >
-        <div
-          aria-label="General avatar"
-          role="img"
-          style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+        <span
+          style="flex-shrink: 0;"
         >
-          GE
-        </div>
+          <div
+            aria-label="General avatar"
+            role="img"
+            style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+          >
+            GE
+          </div>
+        </span>
         <div
           class="Flex-module_flex RoomListItemView-module_content"
           style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"
@@ -1405,13 +1445,17 @@ exports[`<RoomListItemView /> > renders WithVoiceCall story 1`] = `
         class="Flex-module_flex RoomListItemView-module_container"
         style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
       >
-        <div
-          aria-label="General avatar"
-          role="img"
-          style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+        <span
+          style="flex-shrink: 0;"
         >
-          GE
-        </div>
+          <div
+            aria-label="General avatar"
+            role="img"
+            style="width: 32px; height: 32px; border-radius: 50%; background-color: rgb(11, 127, 103); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;"
+          >
+            GE
+          </div>
+        </span>
         <div
           class="Flex-module_flex RoomListItemView-module_content"
           style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"

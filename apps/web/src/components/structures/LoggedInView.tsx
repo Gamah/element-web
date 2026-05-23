@@ -22,7 +22,7 @@ import {
 } from "matrix-js-sdk/src/matrix";
 import { type MatrixCall } from "matrix-js-sdk/src/webrtc/call";
 import classNames from "classnames";
-import { GroupView, SeparatorView, Panel, LeftResizablePanelView } from "@element-hq/web-shared-components";
+import { GroupView, SeparatorView, Panel, LeftResizablePanelView, RoomListMiniContext, useViewModel } from "@element-hq/web-shared-components";
 
 import { isOnlyCtrlOrCmdKeyEvent, Key } from "../../Keyboard";
 import PageTypes from "../../PageTypes";
@@ -83,6 +83,21 @@ const MAX_PINNED_NOTICES_PER_ROOM = 2;
 // contenteditable rather than directly in something inputable.
 function getInputableElement(el: HTMLElement): HTMLElement | null {
     return el.closest("input, textarea, select, [contenteditable=true]");
+}
+
+function RoomListMiniContextProvider({
+    vm,
+    children,
+}: {
+    vm: ResizerViewModel;
+    children: React.ReactNode;
+}): React.JSX.Element {
+    const { isMiniCollapsed } = useViewModel(vm);
+    return (
+        <RoomListMiniContext.Provider value={{ isMiniCollapsed, onToggleMiniCollapsed: vm.toggleMiniCollapsed }}>
+            {children}
+        </RoomListMiniContext.Provider>
+    );
 }
 
 interface IProps {
@@ -797,20 +812,22 @@ class LoggedInView extends React.Component<IProps, IState> {
         const roomView = <div className="mx_RoomView_wrapper">{pageElement}</div>;
         const content =
             useNewRoomList && this.resizerViewModel ? (
-                <GroupView vm={this.resizerViewModel}>
-                    <SpacePanel />
-                    <LeftResizablePanelView
-                        vm={this.resizerViewModel}
-                        className="mx_LeftPanel_panel"
-                        minSize="200px"
-                        maxSize="370px"
-                        defaultSize="370px"
-                    >
-                        {leftPanel}
-                    </LeftResizablePanelView>
-                    <SeparatorView className="mx_Separator" vm={this.resizerViewModel} />
-                    <Panel className="mx_LeftPanel_panel">{roomView}</Panel>
-                </GroupView>
+                <RoomListMiniContextProvider vm={this.resizerViewModel}>
+                    <GroupView vm={this.resizerViewModel}>
+                        <SpacePanel />
+                        <LeftResizablePanelView
+                            vm={this.resizerViewModel}
+                            className="mx_LeftPanel_panel"
+                            minSize="56px"
+                            maxSize="370px"
+                            defaultSize="370px"
+                        >
+                            {leftPanel}
+                        </LeftResizablePanelView>
+                        <SeparatorView className="mx_Separator" vm={this.resizerViewModel} />
+                        <Panel className="mx_LeftPanel_panel">{roomView}</Panel>
+                    </GroupView>
+                </RoomListMiniContextProvider>
             ) : (
                 <>
                     {leftPanel}

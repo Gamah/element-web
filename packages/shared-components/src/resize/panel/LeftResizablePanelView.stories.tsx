@@ -48,6 +48,7 @@ const meta = {
     args: {
         initialSize: 20,
         isCollapsed: false,
+        isMiniCollapsed: false,
         isFocusedViaKeyboard: false,
         onLeftPanelResize: fn(),
         setPanelHandle: fn(),
